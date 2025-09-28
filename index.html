@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure App Service - Teste de Deploy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Fundo cinza claro */
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .container {
+            background-color: #ffffff; /* Fundo branco para o conteúdo */
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #0078d4; /* Azul Azure */
+            font-size: 2em;
+        }
+        .success-message {
+            color: #4CAF50; /* Verde de sucesso */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Teste de Serviço de Aplicação Azure</h1>
+        <p class="success-message">🎉 Deploy de Teste Realizado com Sucesso! 🎉</p>
+        <p>Esta página confirma que o App Service está executando o arquivo index.html da sua pasta raiz.</p>
+        <p>A data e hora do servidor é: <span id="datetime"></span></p>
+    </div>
+
+    <script>
+        // Adiciona um script simples para mostrar a hora do cliente
+        document.getElementById("datetime").innerHTML = new Date().toLocaleString();
+    </script>
+</body>
+</html>
